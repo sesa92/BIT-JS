@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+
+        <title>Bit Show</title>
+    </head>
+    <body>
+        <header class="container-fluid bg-dark text-white" >
+            <nav class="container d-flex justify-content-between">
+                <p class="fw-bold">BitShow</p>
+                <input type="search" id="search" placeholder="Search TV shows">
+            </nav>
+        </header>
+
+    <div class="container">    
+            <form class="form-inline my-2 my-lg-0">
+            </form>
+        </div>
+
+        <div class="row cardHolder col-9 text-primary mx-auto"></div>
+        <div class="alert alert-danger" style="display: none;"></div>
+    </div>
+
+    <div class="singleMovie" style="display: none;">
+        <div class="btn btn-primary">
+            <button id='btn'>Back</button>
+        </div>
+        <h1 id = "movieName"></h1>
+
+        <div class="container row gy-2 col-9 mx-auto p-0">                    
+            <img id = "img" class="col-6 p-0"  alt="No Image!">
+            <div class="col-6 h-50 small">
+                <div>
+                    <h3 class="seasons"></h3>
+                    <ul id = "listSeasons"></ul>
+                </div>
+
+                <div>
+                    <h3 class="cast"></h3>
+                    <ul id = "listCast"></ul>
+                </div>
+            </div>     
+        </div> 
+        
+        <div id = "showDetails" class="col-8 mx-auto small">
+            <h4>Show details</h4>
+        </div>
+    </div>
+
+
+        <footer class="container-fluid bg-dark text-white text-center p-2">Copyright &copy; BIT Student 2021</footer>
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
